@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/waqf/static/css/main.976d3cbf.css",
+    "main.js": "/waqf/static/js/main.0a687190.js",
+    "index.html": "/waqf/index.html",
+    "main.976d3cbf.css.map": "/waqf/static/css/main.976d3cbf.css.map",
+    "main.0a687190.js.map": "/waqf/static/js/main.0a687190.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.976d3cbf.css",
+    "static/js/main.0a687190.js"
+  ]
+}
