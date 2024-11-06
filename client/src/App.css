@@ -1,0 +1,207 @@
+/* App.css */
+
+/* Global Reset and Font Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;
+  color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Main container */
+.container {
+  width: 100%;
+  max-width: 900px;
+  background: linear-gradient(145deg, #1f1f1f, #252525);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+/* Headings Styling */
+h1, h3 {
+  color: #00bfa5;
+  text-align: center;
+  margin-top: 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+/* Form Section */
+.form-section {
+  margin-bottom: 3rem; /* Adds spacing between sections */
+}
+
+/* Label Styling */
+label {
+  font-size: 1rem;
+  color: #e0e0e0;
+  display: block;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+.filter-group label {
+  width: 48%; /* Ensures equal length for both "Filter by Status" and "Filter by Property" */
+  display: inline-block;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Input and Select Elements */
+form input, form select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: 2px solid #444;
+  background-color: #333;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+form input:focus, form select:focus {
+  outline: none;
+  border-color: #00bfa5;
+  background-color: #444;
+}
+
+input::placeholder {
+  color: #bbb;
+}
+
+/* Button Styling */
+button[type="submit"] {
+  background-color: #00bfa5;
+  color: white;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: auto;
+  align-self: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button[type="submit"]:hover {
+  background-color: #009688;
+  transform: translateY(-2px);
+}
+
+button[type="submit"]:active {
+  background-color: #00796b;
+  transform: translateY(0);
+}
+
+/* Task List Styling */
+.task-list {
+  margin-top: 2rem;
+}
+
+.task-item {
+  padding: 15px;
+  background-color: #333;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.task-item:hover {
+  background-color: #444;
+  transform: translateY(-2px);
+}
+
+.task-item span {
+  color: #f4f4f4;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.task-item.overdue {
+  background-color: #3a1e1e;
+  border-left: 8px solid #ff5252;
+  color: #ff5252;
+}
+
+.task-item.overdue:hover {
+  background-color: #4d1e1e;
+}
+
+/* Filters */
+.filter-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.filter-group select {
+  width: 48%; /* Ensures equal length for both filter dropdowns */
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid #555;
+  background-color: #444;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.filter-group select:focus {
+  outline: none;
+  border-color: #00bfa5;
+  background-color: #555;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+  .filter-group {
+    flex-direction: column;
+  }
+
+  button[type="submit"],
+  select {
+    width: 100%;
+  }
+}
