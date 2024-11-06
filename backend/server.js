@@ -22,7 +22,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/test', {
   console.error('MongoDB connection error:', error);
 });
 
-// Use the routers
+
 app.use('/properties', propertiesRouter);
 app.use('/tasks', tasksRouter); 
 
